@@ -1,0 +1,49 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <h1 id="title">freeCodeCamp Survey From</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform </p>
+        <link rel="stylesheet" href="Survey.css">
+    </head>
+    <body>
+        <form method="post" id="survey-form">
+            <fieldset>
+                <label id="name-label">Enter Your Name<input id="name" type="text" placeholder="Enter Your Name" required></label>
+                <label id="email-label">Enter Your Email<input id="email" type="email" placeholder="Enter Your Email" required></label>
+                <label id="number-label">Input Number<input id="number" type="number" min="13" max="120" placeholder="Input Number" required></label>
+                <label></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Would you recommend freeCodeCamp to a friend?</legend>
+                <label><input value="1" name="recomend?" id="Definately" type="radio" class="inline">Definately</label>
+                <label><input value="2" name="recomend?" id="Maybe" type="radio" class="inline">Maybe</label>
+                <label><input value="3" name="recomend?" id="Sure" type="radio" class="inline">Sure</label>
+                <label for="dropdown">What is your favourite feature of freeCodeCamp?
+                    <select name="" id="dropdown">
+                        <option value="">Select an option</option>
+                        <option value="">Challenges</option>
+                        <option value="">Projects</option>
+                        <option value="">Community</option>
+                        <option value="">Open Source</option>
+                    </select>
+                </label>
+                <label for="Front-end"><input value="FE" type="checkbox" name="improve" id="Front-end" class="inline">Front-end Projects</label>
+                <label for="Back-end"><input value="BE" type="checkbox" name="improve" id="Back-end" class="inline">Back-end Projects</label>
+                <label for="Data-Visualization"><input value="DV" type="checkbox" name="improve" id="Data-Visualization" class="inline">Data Visualization</label>
+                <label for="Challenges"><input value="Ch" type="checkbox" name="improve" id="Challenges" class="inline">Challenges</label>
+                <label for="Open-Source"><input value="OS" type="checkbox" name="improve" id="Open-Source" class="inline">Open Source Community</label>
+                <label for="Gitter"><input value="Gtr" type="checkbox" name="improve" id="Gitter" class="inline">Gitter help rooms</label>
+                <label for="Videos"><input value="Vid" type="checkbox" name="improve" id="Videos" class="inline">Videos</label>
+                <label for="City"><input value="Cty" type="checkbox" name="improve" id="City" class="inline">City Meetups</label>
+                <label for="Wiki"><input value="Wki" type="checkbox" name="improve" id="Wiki" class="inline">Wiki</label>
+                <label for="Forum"><input value="Frm" type="checkbox" name="improve" id="Forum" class="inline">Forum</label>
+                <label for="Add-Courses"><input value="AC" type="checkbox" name="improve" id="Add-courses" class="inline">Additional Courses</label>
+
+                <label for="textarea">Any comments or suggestions?<textarea id="textarea" id="comments" cols="30" rows="10" placeholder="Enter your comments here..." ></textarea></label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
